@@ -5,7 +5,7 @@
     public int Intelligence { get; set; }
     public static void Move()
     {
-        Console.WriteLine("Герой идёт вперёд!");
+        Console.WriteLine("Герой идёт вперёд");
     }
     public static void Attack()
     {
@@ -30,10 +30,10 @@ class Pudge : Hero
     }
     public static void Hook()
     {
-        Console.WriteLine("Pudge Бросил мясной крюк!");
-        if(Random() >= 3)
+        Console.WriteLine("Pudge Бросил мясной крюк");
+        if (Random() >= 3)
         {
-            Console.WriteLine("Pudge попал в цель!");
+            Console.WriteLine("Pudge попал в цель");
         }
         else
         {
@@ -42,15 +42,15 @@ class Pudge : Hero
     }
     public static void Root()
     {
-        Console.WriteLine("Ядовитое облако появилось вокруг Pudge!");
+        Console.WriteLine("Ядовитое облако появилось вокруг Pudge");
     }
     public static void Dismember()
     {
-        Console.WriteLine("Pudge начал заживо пожирать врага!");
+        Console.WriteLine("Pudge начал заживо пожирать врага");
     }
 }
 class Terrorblade : Hero
-{ 
+{
     public static void Atribute()
     {
         Terrorblade terrorblade = new Terrorblade();
@@ -61,7 +61,7 @@ class Terrorblade : Hero
     }
     public static void Reflection()
     {
-        Console.WriteLine("Terrorblade создал тёмного неуязвимого двойника противника!");
+        Console.WriteLine("Terrorblade создал тёмного неуязвимого двойника противника");
     }
     public static void ConjureImage()
     {
@@ -69,14 +69,13 @@ class Terrorblade : Hero
     }
     public static void Metamorphosis()
     {
-        Console.WriteLine("Terrorblade превратился в могущественного демона!");
+        Console.WriteLine("Terrorblade превратился в могущественного демона");
     }
     public static void Sunder()
     {
-        Console.WriteLine("Terrorblade поменялся жизнеными силами!");
+        Console.WriteLine("Terrorblade поменялся жизнеными силами");
     }
 }
-
 class Medusa : Hero
 {
     public static void Atribute()
@@ -89,19 +88,19 @@ class Medusa : Hero
     }
     public static void SplitShot()
     {
-        Console.WriteLine("Medusa магически расщепляет свои стрелы, атакуя несколько целей!");
+        Console.WriteLine("Medusa магически расщепляет свои стрелы, атакуя несколько целей");
     }
     public static void MysticSnake()
     {
-        Console.WriteLine("Medusa выпустила энергетическую змею!");
+        Console.WriteLine("Medusa выпустила энергетическую змею");
     }
     public static void ManaShield()
     {
-        Console.WriteLine("Medusa создала энергетический щит!");
+        Console.WriteLine("Medusa создала энергетический щит");
     }
     public static void StoneGaze()
     {
-        Console.WriteLine("Medusa превращяет врагов в камень!");
+        Console.WriteLine("Medusa превращяет врагов в камень");
     }
 }
 class StormSpirit : Hero
@@ -117,24 +116,32 @@ class StormSpirit : Hero
     public static void StaticRemnant()
     {
         Console.WriteLine("Storm Spirit оставил свою энергетическую копию");
-        Console.WriteLine("Атака Storm Spirit заряжена энергией!");
+        Console.WriteLine("Атака Storm Spirit заряжена энергией");
     }
     public static void ElectricVortex()
     {
         Console.WriteLine("Storm Spirit затянул врага в свой электрический вихрь");
-        Console.WriteLine("Атака Storm Spirit заряжена энергией!");
+        Console.WriteLine("Атака Storm Spirit заряжена энергией");
     }
     public static void BallLightning()
     {
-        Console.WriteLine("Strom Spirit летит вперёд!");
-        Console.WriteLine("Атака Storm Spirit заряжена энергией!");
+        Console.WriteLine("Strom Spirit летит вперёд");
+        Console.WriteLine("Атака Storm Spirit заряжена энергией");
     }
 }
 class Lion : Hero
 {
+    public static void Atribute()
+    {
+        Lion lion = new Lion();
+        lion.Agility = 16;
+        lion.Strength = 17;
+        lion.Intelligence = 16;
+        Console.WriteLine($"Сила: {lion.Strength}  Ловкость: {lion.Agility}  Интеллект: {lion.Intelligence}");
+    }
     public static void EarthSpike()
     {
-        Console.WriteLine("Lion выпустил полосу каменных шипов!");
+        Console.WriteLine("Lion выпустил полосу каменных шипов");
     }
     public static void Hex()
     {
@@ -142,12 +149,57 @@ class Lion : Hero
     }
     public static void ManaDrain()
     {
-        Console.WriteLine("Lion поглащает магическую силу врага!");
+        Console.WriteLine("Lion поглащает магическую силу врага");
     }
     public static void FingerofDeath()
     {
-        Console.WriteLine("Lion разрывает врага огненным зарядом"); 
+        Console.WriteLine("Lion разрывает врага огненным зарядом");
     }
 }
-
+class CrystalMaiden : Hero
+{
+    public static void Atribute()
+    {
+        CrystalMaiden crystalMaiden = new CrystalMaiden();
+        crystalMaiden.Agility = 16;
+        crystalMaiden.Strength = 17;
+        crystalMaiden.Intelligence = 16;
+        Console.WriteLine($"Сила: {crystalMaiden.Strength}  Ловкость: {crystalMaiden.Agility}  Интеллект: {crystalMaiden.Intelligence}");
+    }
+    public static void CrystalNova()
+    {
+        Console.WriteLine("Crystal Maiden направляет морозный ветер в врага");
+    }
+    public static void Frostbite()
+    {
+        Console.WriteLine("Crystal Maiden заковывает противника в лёд");
+    }
+    public static void FreezingField()
+    {
+        Console.WriteLine("Вокруг Crystal Maiden смертельные сосульки");
+    }
+}
+class Lina : Hero
+{
+    public static void Atribute()
+    {
+        Lina lina = new Lina();
+        lina.Agility = 23;
+        lina.Strength = 20;
+        lina.Intelligence = 30;
+        Console.WriteLine($"Сила: {lina.Strength}  Ловкость: {lina.Agility}  Интеллект: {lina.Intelligence}");
+    }
+    public static void DragonSlave()
+    {
+        Console.WriteLine("Lina высвобождает дыхание дракона");
+    }
+    public static void LightStrikeArray()
+    {
+        Console.WriteLine("Lina призывает стоб пламени");
+    }
+    public static void LagunaBlade()
+    {
+        Console.WriteLine("Lina выпускает разряд молнии в врага");
+    }
+}
 
