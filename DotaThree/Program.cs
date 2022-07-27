@@ -104,5 +104,50 @@ class Medusa : Hero
         Console.WriteLine("Medusa превращяет врагов в камень!");
     }
 }
+class StormSpirit : Hero
+{
+    public static void Atribute()
+    {
+        StormSpirit stormSpirit = new StormSpirit();
+        stormSpirit.Agility = 22;
+        stormSpirit.Strength = 21;
+        stormSpirit.Intelligence = 23;
+        Console.WriteLine($"Сила: {stormSpirit.Strength}  Ловкость: {stormSpirit.Agility}  Интеллект: {stormSpirit.Intelligence}");
+    }
+    public static void StaticRemnant()
+    {
+        Console.WriteLine("Storm Spirit оставил свою энергетическую копию");
+        Console.WriteLine("Атака Storm Spirit заряжена энергией!");
+    }
+    public static void ElectricVortex()
+    {
+        Console.WriteLine("Storm Spirit затянул врага в свой электрический вихрь");
+        Console.WriteLine("Атака Storm Spirit заряжена энергией!");
+    }
+    public static void BallLightning()
+    {
+        Console.WriteLine("Strom Spirit летит вперёд!");
+        Console.WriteLine("Атака Storm Spirit заряжена энергией!");
+    }
+}
+class Lion : Hero
+{
+    public static void EarthSpike()
+    {
+        Console.WriteLine("Lion выпустил полосу каменных шипов!");
+    }
+    public static void Hex()
+    {
+        Console.WriteLine("Lion превратил врага в безобидную зверушку");
+    }
+    public static void ManaDrain()
+    {
+        Console.WriteLine("Lion поглащает магическую силу врага!");
+    }
+    public static void FingerofDeath()
+    {
+        Console.WriteLine("Lion разрывает врага огненным зарядом"); 
+    }
+}
 
 
