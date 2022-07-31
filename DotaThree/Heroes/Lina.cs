@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 23;
             Strength = 20;
             Intelligence = 30;
+            Name = "Lina";
         }
 
         public void DragonSlave()

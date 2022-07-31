@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 20;
             Strength = 25;
             Intelligence = 18;
+            Name = "Axe";
         }
 
         public void BerserkersCall()

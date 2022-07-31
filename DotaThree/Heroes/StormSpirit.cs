@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 22;
             Strength = 21;
             Intelligence = 23;
+            Name = "Strom Spirit";
         }
 
         public void StaticRemnant()

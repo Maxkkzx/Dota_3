@@ -7,6 +7,7 @@
             Agility = 25;
             Strength = 14;
             Intelligence = 16;
+            Name = "Pudge";
         }
 
         public void Hook()

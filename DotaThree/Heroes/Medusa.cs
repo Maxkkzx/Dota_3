@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 22;
             Intelligence = 23;
             Strength = 17;
+            Name = "Medusa";
         }
 
         public  void SplitShot()

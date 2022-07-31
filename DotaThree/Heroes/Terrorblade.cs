@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 22;
             Strength = 16;
             Intelligence = 19;
+            Name = "Terrorblade";
         }
 
         public void Reflection()

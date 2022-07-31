@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 24;
             Strength = 17;
             Intelligence = 21;
+            Name = "Hoodwink";
         }
 
         public void AcornShot()

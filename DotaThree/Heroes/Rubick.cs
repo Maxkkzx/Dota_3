@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 23;
             Strength = 21;
             Intelligence = 25;
+            Name = "Rubick";
         }
 
         public void Telekinesis()

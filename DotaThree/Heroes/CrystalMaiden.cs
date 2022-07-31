@@ -13,6 +13,7 @@ namespace DotaThree.Heroes
             Agility = 16;
             Strength = 17;
             Intelligence = 16;
+            Name = "Crystal Maiden";
         }
 
         public void CrystalNova()

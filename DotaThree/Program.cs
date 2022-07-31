@@ -3,19 +3,19 @@
 namespace DotaThree 
 {
     public class Program 
-    {
+    {  
         static void Main(string[] args)
         {
-            Axe axe = new Axe();
-            CrystalMaiden crystalMaiden = new CrystalMaiden();
-            Hoodwink hoodwink = new Hoodwink();
-            Lina lina = new Lina();
-            Lion lion = new Lion();
-            Medusa medusa = new Medusa();
-            Pudge pudge = new Pudge();
-            Rubick rubick = new Rubick();
-            StormSpirit stormSpirit = new StormSpirit();
-            Terrorblade terrorblade = new Terrorblade();
+            Axe axe = new();
+            CrystalMaiden crystalMaiden = new();
+            Hoodwink hoodwink = new();
+            Lina lina = new();
+            Lion lion = new();
+            Medusa medusa = new();
+            Pudge pudge = new();
+            Rubick rubick = new();
+            StormSpirit stormSpirit = new();
+            Terrorblade terrorblade = new();
 
             axe.BerserkersCall();
             crystalMaiden.FreezingField();
@@ -27,6 +27,8 @@ namespace DotaThree
             rubick.SpellSteal();
             stormSpirit.ElectricVortex();
             terrorblade.Metamorphosis();
+
+            Console.WriteLine(pudge);
         }
     }    
 }
