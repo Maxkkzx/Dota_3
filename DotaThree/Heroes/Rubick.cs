@@ -30,5 +30,13 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Rubick ворует способность у врага");
         }
+
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Потрясающая энергия!", "Маг наносит удар", "Я Rubick, Великий маг", "Мою жажду знаний невозможно утолить", "Ха-ха-ха! Ах, хи-хи-хи-хи-хи-хи-хи-хи-хи!" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
     }
 }

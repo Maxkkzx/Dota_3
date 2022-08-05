@@ -35,5 +35,13 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Terrorblade поменялся жизнеными силами");
         }
+
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Terrorblade!", "Испытай мой клинок, почему бы тебе этого не сделать", "Я двигаю небо и землю", "Мудрый клинок забирает жизнь глупца", "Ярость демона сильнее смерти" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
     }
 }

@@ -35,5 +35,13 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Hoodwink заряжает мощный выстрел из своего арбалета");
         }
+
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Кто сказал, что ты можешь гулять в моем лесу?", "Поздоровайся с моим маленьким другом", "Справедливо, что тебе есть о чем беспокоиться", "С кем мы сражаемся?", "Эй, как ты там?" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
     }
 }

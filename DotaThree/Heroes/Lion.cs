@@ -35,5 +35,13 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Lion разрывает врага огненным зарядом");
         }
+
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Я Lion", "В аду нет такой свирепости, как я", "Пошел ты к черту!", "Хах-ха-хе-хе-хе-хе-хе", "Ах, жаль вас разочаровывать" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
     }
 }

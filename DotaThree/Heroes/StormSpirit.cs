@@ -33,5 +33,13 @@ namespace DotaThree.Heroes
             Console.WriteLine("Strom Spirit летит вперёд");
             Console.WriteLine("Атака Storm Spirit заряжена энергией");
         }
+
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Штормовое предупреждение", "О-о, это кто такой красивый?", "Шторм начинается!", "Да пребудет с вами Дух Бури!", "Storm Spirit прибыл!" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
     }
 }

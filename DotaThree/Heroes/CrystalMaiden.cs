@@ -30,6 +30,14 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Вокруг Crystal Maiden падают смертельные сосульки");
         }
-    }
 
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Да начнётся битва!", "Кто меня звал?", "На прорыв!", "Обратись в лёд!", "Мне кажется или похолодало?" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
+
+    }
 }

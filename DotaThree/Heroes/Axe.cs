@@ -30,5 +30,13 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Axe наносит удар по слабой точке врага");
         }
+
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Axe готов!", "Пусть начнется бойня", "Axe идёт!", "Попробуй моё лезвие!", "Приходи и получи его!" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
     }
 }

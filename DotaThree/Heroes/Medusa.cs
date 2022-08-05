@@ -35,6 +35,13 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Medusa превращяет врагов в камень");
         }
-    }
 
+        public void Speak()
+        {
+            string[] Replic = new string[5] { "Medusa!", "Встреться со мной взглядом", "Ради чести", "Бесшумный, как змея", "Стой где стоишь" };
+
+            Random rnd = new();
+            Console.WriteLine(Replic[rnd.Next(0, 4)]);
+        }
+    }
 }

@@ -27,5 +27,10 @@ namespace DotaThree.Heroes
         {
             Console.WriteLine("Герой нанёс удар");
         }
+
+        public virtual void Speak()
+        {
+
+        }
     }
 }

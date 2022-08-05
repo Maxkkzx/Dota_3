@@ -28,6 +28,18 @@ namespace DotaThree
             stormSpirit.ElectricVortex();
             terrorblade.Metamorphosis();
 
+            axe.Speak();
+            crystalMaiden.Speak();
+            hoodwink.Speak();
+            lina.Speak();
+            lion.Speak();
+            medusa.Speak();
+            pudge.Speak();
+            rubick.Speak();
+            stormSpirit.Speak();
+            terrorblade.Speak();
+
+
             Console.WriteLine(pudge);
         }
     }    
