@@ -39,7 +39,6 @@ namespace DotaThree
             stormSpirit.Speak();
             terrorblade.Speak();
 
-
             Console.WriteLine(pudge);
         }
     }    
