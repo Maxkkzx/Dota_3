@@ -1,11 +1,13 @@
 ﻿using DotaThree.Heroes;
+using DotaThree.Class;
 
-namespace DotaThree 
+namespace DotaThree
 {
-    public class Program 
-    {  
+    public class Program
+    {
         static void Main(string[] args)
         {
+            Teams team = new Teams();
             Axe axe = new();
             CrystalMaiden crystalMaiden = new();
             Hoodwink hoodwink = new();
@@ -39,7 +41,9 @@ namespace DotaThree
             stormSpirit.Speak();
             terrorblade.Speak();
 
+            team.TeamMix();
+
             Console.WriteLine(pudge);
         }
-    }    
+    }
 }
